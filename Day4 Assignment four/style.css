@@ -1,0 +1,115 @@
+:root{
+    --red: hsl(1, 90%, 60%);
+    --blue: hsl(219, 85%, 26%);
+    --White: hsl(0, 0%, 100%);
+    --VeryLightGrayishBlue: hsl(210, 60%, 98%);
+    --LightGrayishBlue1 : hsl(211, 68%, 94%);
+    --LightGrayishBlue2: hsl(205, 33%, 90%);
+    --Grayishblue: hsl(219, 14%, 63%);
+    --DarkGrayishBlue: hsl(219, 12%, 42%);
+    --VeryDarkBlue: hsl(224, 21%, 14%);
+    --fontSizePara: 16px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: -plusJakar;
+    src: url('../Day4/ Assignment/ four/ assets/fonts/');
+}
+body{
+    background-color: var(--VeryLightGrayishBlue);
+    width: 100%;
+    height: 100vh;
+    
+}
+.wrapper{
+    max-width: 350px;
+    margin: auto;
+    
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+}
+header .notify{
+    display: flex;
+}
+header .notify h2{
+    color: var(--VeryDarkBlue);
+}
+header .notify .no{
+    color: var(--White);
+    background-color: var(--blue);
+    padding: 2px 5px;
+    border-radius: 2px;
+}
+header .mark-all p{
+    color: var(--DarkGrayishBlue);
+    font-size: var(--fontSizePara);
+}
+main .container{
+    display: flex;
+    background-color: var(--LightGrayishBlue1);
+    margin-bottom: 1em;
+    width: 500px;
+    margin: auto;
+}
+main .container .first{
+    color: var(--VeryDarkBlue);
+}
+main .container .userImg img{
+    width: 50px;
+}
+main .container .userActivity{
+    display: flex;
+    flex-direction: column;
+}
+main .container .userActivity p{
+    color: var(--DarkGrayishBlue);
+    margin-left: 5px;
+}
+main .container .userActivity strong{
+    color: var(--VeryDarkBlue);
+}
+main .container .userActivity .light{
+    color: var(--DarkGrayishBlue);
+}
+main .container .userActivity .border{
+    border: 1px solid var(--Grayishblue);
+}
+main .container .userActivity .border p{
+    font-size: var(--fontSizePara);
+    padding: 1em;
+}
+main .container .userActivity .chess{
+    color: var(--blue);
+}
+main .wrap{
+    background-color: var(--White)
+}
+main .container .userActivity .red{
+    content: '';
+    display: inline-block;
+    background-color: var(--red);
+    width: 30px;
+    border-radius: 50%;
+}
+@media screen and (min-width: 500px) {
+    body{
+        width: 100%;
+    }
+    .wrapper{
+        max-width: 600px;
+        /* height: 100vh; */
+        margin: auto;
+        background-color: var(--White);
+        border-radius: 10px;
+    }
+    main .container .user{
+        margin-left: 8em;
+    }
+}
