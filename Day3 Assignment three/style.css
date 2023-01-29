@@ -191,6 +191,10 @@ nav .navbar li .nav-links{
 
 /* media queries */
  @media screen and (min-width: 500px) {
+    nav{
+        margin: auto;
+        margin-left: 2em;
+    }
     nav .navbar{
         display: inline-block;
     }
@@ -229,7 +233,10 @@ nav .navbar li .nav-links{
 } 
 @media screen and (min-width: 900px){
     nav{
-        justify-content: space-between;
+         width: 80%;
+         margin: auto;
+         align-items: center;
+         justify-content: space-between;
     }
     .grid{
         grid-template-areas: 
