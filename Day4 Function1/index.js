@@ -11,6 +11,13 @@ const capitalLetter = (sentence) => {
     return str.join(" ");
 }
 console.log(capitalLetter("i love myself so much"));
+
+function alphabet(letter){
+     let str = letter.toUpperCase().split("").join("");
+      console.log("My feelings is " + str);
+}
+alphabet("i hate racist");
+
 // Write a JavaScript function that accepts a number as a parameter and check the 
 
 
